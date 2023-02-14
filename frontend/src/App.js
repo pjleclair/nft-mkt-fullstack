@@ -6,7 +6,6 @@ import Bid from "./components/bid/bid"
 import Collection from "./components/collection/collection"
 import Profile from "./components/profile/profile"
 import Settings from "./components/settings/settings"
-
 import React from 'react'
 
 function App() {

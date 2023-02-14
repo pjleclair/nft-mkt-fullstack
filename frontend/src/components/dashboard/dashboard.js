@@ -2,8 +2,23 @@ import "./dashboard.css"
 import Card from "../card/card.js"
 import Featured from "./images/Featured.svg"
 import Avatar from "./images/Avatar.svg"
+import React from "react"
+import axios from "axios"
 
 const Dashboard = () => {
+
+    const [nftData, setNftData] = React.useState({})
+
+    console.log(nftData)
+
+    React.useEffect(()=> {
+        axios
+            .get(process.env.REACT_APP_BASE_URL)
+            .then(response => {
+                setNftData(response.data)
+            })
+    }, [])
+
     return(
         <main className="cont--container">
             <div className="discover--container">
