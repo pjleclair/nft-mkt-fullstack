@@ -8,6 +8,10 @@
     height: 24.5rem;
 }
 
+.card--container img {
+    height: 11.688rem;
+}
+
 button {
     align-self: center;
     background: #6F4FF2;

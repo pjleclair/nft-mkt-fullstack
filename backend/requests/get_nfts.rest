@@ -1,2 +1,2 @@
-GET http://localhost:3000/api/nfts/8liens
+GET http://localhost:3080/api/nfts/8liens
 Content-Type: application/json
