@@ -3,36 +3,7 @@ import Trending from "../trending/trending.js"
 import Featured from "./images/Featured.svg"
 import Avatar from "./images/Avatar.svg"
 
-import React from "react"
-import axios from "axios"
-
-const Dashboard = () => {
-
-    const [trendingNfts, setTrendingNfts] = React.useState([])
-    const [displayArray, setDisplayArray] = React.useState([])
-    const url = "/api/nfts/"
-
-    React.useEffect(() => {
-        axios
-            .get(`${url}list?order=h24_volume_native_asc`)
-            .then(response => {
-                console.log(response.data)
-                setTrendingNfts(response.data)
-            })
-    }, [url])
-
-    React.useEffect(() => {
-        const array = trendingNfts.slice(0,4)
-        const newArray = array.map((obj,i) => {
-            const promise = axios
-                    .get(`${url}${obj.id}`)
-                    .then((response) => {
-                        return response.data
-                    })
-            return promise
-        })
-        setDisplayArray(newArray)
-    },[trendingNfts,url])
+const Dashboard = ({displayArray}) => {
 
     return(
         <main className="cont--container">
@@ -85,7 +56,7 @@ const Dashboard = () => {
                     <div className="selector--item">Music</div>
                 </div>
             </div>
-            <Trending trendingNfts={displayArray}/>
+            <Trending displayArray={displayArray}/>
         </main>
     )
 }

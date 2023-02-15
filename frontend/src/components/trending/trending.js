@@ -3,12 +3,12 @@ import React from "react"
 import "./trending.css"
 
 
-const Trending = ({trendingNfts}) => {
+const Trending = ({displayArray}) => {
     const [nfts, setNfts] = React.useState([])
 
-    Promise.all(trendingNfts).then(response => setNfts(response))
+    Promise.all(displayArray).then(response => setNfts(response))
 
-    const displayArray = 
+    const trendingCards = 
         nfts.map((obj) => {
             return <Card
                     key={obj.id}
@@ -20,7 +20,7 @@ const Trending = ({trendingNfts}) => {
 
     return(
         <div className="trending">
-                {displayArray}
+                {trendingCards}
                 <Card />
                 <Card />
                 <Card />
