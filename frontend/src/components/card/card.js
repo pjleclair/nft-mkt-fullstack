@@ -15,7 +15,7 @@ const Card = ({title, image, floor_price}) => {
             </div>
             <div className="vals">
                 <div>3h 1m 50s</div>
-                <div>{floor_price}</div>
+                <div>{floor_price || "0.15"} ETH</div>
             </div>
             <button id="bid--button">Place a Bid</button>
         </div>
