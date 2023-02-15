@@ -1,11 +1,15 @@
 {
-  "name": "NFT Marketplace Backend",
+  "name": "nft-marketplace",
   "version": "1.0.0",
   "description": "Backend for a NFT Marketplace application",
   "main": "index.js",
   "scripts": {
     "test": "jest --verbose",
-    "start": "npx nodemon index.js"
+    "start": "npx nodemon index.js",
+    "build:ui": "rm -rf build && cd ../frontend/ && npm run build && cp -r build ../backend",
+    "deploy": "fly deploy",
+    "deploy:full": "npm run build:ui && npm run deploy",    
+    "logs:prod": "fly logs"
   },
   "author": "",
   "license": "ISC",

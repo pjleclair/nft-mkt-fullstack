@@ -10,7 +10,7 @@ const Dashboard = () => {
 
     const [trendingNfts, setTrendingNfts] = React.useState([])
     const [displayArray, setDisplayArray] = React.useState([])
-    const url = process.env.REACT_APP_BASE_URL
+    const url = "/api/nfts/"
 
     React.useEffect(() => {
         axios
