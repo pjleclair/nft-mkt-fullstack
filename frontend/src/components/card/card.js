@@ -1,12 +1,11 @@
 import "./card.css"
-// import NFT from "./images/NFT.svg"
+import NFT from "./images/NFT.svg"
 
 const Card = ({title, image, floor_price}) => {
-    
     return (
         <div className="card--container">
-            <img src={image} alt="nft"/>
-            <div id="title">{title}</div>
+            <img src={image || NFT} alt="nft"/>
+            <div id="title">{title || "Liquid Wave"}</div>
             <div className="info--container">
                 <div className="info">
                     <div>Auction Time</div>

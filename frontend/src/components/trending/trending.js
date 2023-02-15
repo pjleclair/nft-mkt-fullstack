@@ -21,6 +21,10 @@ const Trending = ({trendingNfts}) => {
     return(
         <div className="trending">
                 {displayArray}
+                <Card />
+                <Card />
+                <Card />
+                <Card />
         </div>
     )
 }

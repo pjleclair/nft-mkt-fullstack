@@ -22,7 +22,7 @@ const Dashboard = () => {
     }, [url])
 
     React.useEffect(() => {
-        const array = trendingNfts.slice(0,3)
+        const array = trendingNfts.slice(0,4)
         const newArray = array.map((obj,i) => {
             const promise = axios
                     .get(`${url}${obj.id}`)

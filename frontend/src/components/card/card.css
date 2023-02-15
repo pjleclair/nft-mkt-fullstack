@@ -10,6 +10,7 @@
 
 .card--container img {
     height: 11.688rem;
+    border-radius: 16px;
 }
 
 button {
