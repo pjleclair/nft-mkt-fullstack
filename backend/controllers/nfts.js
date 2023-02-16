@@ -6,6 +6,9 @@ nftRouter.get('/', (req, res) => {
         .then(response => {
             res.send(response.data)
         })
+        .catch(error =>
+            res.status(404).send(error)
+        )
 })
 
 nftRouter.get('/:id', (req, res) => {
@@ -13,6 +16,9 @@ nftRouter.get('/:id', (req, res) => {
         .then(response => {
             res.send(response.data)
         })
+        .catch(error =>
+            res.status(404).send(error)
+        )
 })
 
 nftRouter.post('/', (request, response) => {

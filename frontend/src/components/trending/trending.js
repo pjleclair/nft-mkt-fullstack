@@ -6,7 +6,7 @@ import "./trending.css"
 const Trending = ({displayArray}) => {
     const [nfts, setNfts] = React.useState([])
 
-    Promise.all(displayArray).then(response => setNfts(response))
+    Promise.all(displayArray).then(response => setNfts(response)).catch(err => console.log('error: ', err))
 
     const trendingCards = 
         nfts.map((obj) => {

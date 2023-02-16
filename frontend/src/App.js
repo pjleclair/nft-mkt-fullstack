@@ -24,6 +24,7 @@ function App() {
               console.log(response.data)
               setTrendingNfts(response.data)
           })
+          .catch(console.log('error!'))
   }, [])
 
   React.useEffect(() => {
@@ -34,6 +35,7 @@ function App() {
                   .then((response) => {
                       return response.data
                   })
+                  .catch(console.log('error!'))
           return promise
       })
       setDisplayArray(newArray)
