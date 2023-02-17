@@ -1,9 +1,14 @@
 import "./dashboard.css"
+import React from "react"
 import Trending from "../trending/trending.js"
 import Featured from "./images/Featured.svg"
 import Avatar from "./images/Avatar.svg"
 
 const Dashboard = ({displayArray}) => {
+
+    const [nfts, setNfts] = React.useState([])
+
+    Promise.all(displayArray).then(response => setNfts(response)).catch(err => console.log('error: ', err))
 
     return(
         <main className="cont--container">
@@ -56,7 +61,7 @@ const Dashboard = ({displayArray}) => {
                     <div className="selector--item">Music</div>
                 </div>
             </div>
-            <Trending displayArray={displayArray}/>
+            <Trending nfts={nfts}/>
         </main>
     )
 }
