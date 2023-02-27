@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.12de9416.css",
-    "main.js": "/static/js/main.64655ea4.js",
+    "main.css": "/static/css/main.fd2baf93.css",
+    "main.js": "/static/js/main.aca462a5.js",
     "static/media/Discover.svg": "/static/media/Discover.80a2af421cac0d90a811.svg",
     "static/media/Featured.svg": "/static/media/Featured.f12f36c57dabcede1698dd04228af1ab.svg",
     "static/media/Avatar.svg": "/static/media/Avatar.6f82706bed02ba177c57c9b61bb321df.svg",
@@ -20,11 +20,13 @@
     "static/media/Logout.svg": "/static/media/Logout.fa665664822ca7ac46345b9abaf157a1.svg",
     "static/media/Collection.svg": "/static/media/Collection.fe60278ae684b82469304a7f938c199a.svg",
     "static/media/selectedCollection.svg": "/static/media/selectedCollection.0b424ca49a6f72864c83b02e28999b62.svg",
-    "main.12de9416.css.map": "/static/css/main.12de9416.css.map",
-    "main.64655ea4.js.map": "/static/js/main.64655ea4.js.map"
+    "static/media/2FA.svg": "/static/media/2FA.a70aac5974ccfa28b25eecfd8aaa7e30.svg",
+    "static/media/Verify.svg": "/static/media/Verify.16438dacdcaef76d5538afbf3b6885c0.svg",
+    "main.fd2baf93.css.map": "/static/css/main.fd2baf93.css.map",
+    "main.aca462a5.js.map": "/static/js/main.aca462a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.12de9416.css",
-    "static/js/main.64655ea4.js"
+    "static/css/main.fd2baf93.css",
+    "static/js/main.aca462a5.js"
   ]
 }
